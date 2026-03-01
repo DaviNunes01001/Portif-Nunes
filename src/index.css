@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  /* Cores de Fundo (Backgrounds) */
+  --bg-primary: #0F0F14;
+  --bg-surface: #1A1A2E;
+  --bg-border: #2D2D44;
+
+  /* Cores de Texto */
+  --text-primary: #E8E8F0;
+  --text-secondary: #8888AA;
+
+  /* Cores de Acento (Accents) */
+  --accent-cyan: #00D4FF;
+  --accent-purple: #7B61FF;
+  --accent-green: #00FFB2;
+
+  /* Gradientes */
+  --grad-primary: linear-gradient(90deg, #00D4FF 0%, #7B61FF 100%);
+  --grad-surface: linear-gradient(180deg, rgba(26, 46, 0.8) 0%, rgba(26, 26, 46, 0.4) 100%);
+  --grad-text: linear-gradient(90deg, #01ccff 0%, #ff03ea 100%);
+
+  /* Efeitos de Vidro (Glassmorphism) */
+  --glass-bg: rgba(26, 26, 46, 0.8); 
+  --glass-border: 1px solid rgba(45, 45, 68, 0.5);
+  --glass-blur: blur(12px);
+
+  /* Tipografia */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Sombras de Glow */
+  --glow-cyan: 0px 0px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Configuração Básica de Reset e Aplicação */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Exemplo de classe para os seus Cards */
+.card-premium {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card-premium:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--glow-cyan);
+  transform: translateY(-5px);
+}
+
+/* Exemplo de botão com o gradiente */
+.btn-primary {
+  background: var(--grad-primary);
+  color: var(--text-primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}

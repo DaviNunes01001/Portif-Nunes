@@ -1,0 +1,221 @@
+@import url("../../../index.css");
+
+main {
+  width: 100%;
+  height: 527px;
+  background-color: #000;
+  /* Variáveis */
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image:
+    linear-gradient(
+      to left,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line)),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line)),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.textContet {
+  margin-left: 47px;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.textContet .Name {
+  font-size: 50px;
+  background: var(--grad-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textContet h1 {
+  font-size: 30px;
+  background: var(--grad-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+.Bnts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.Botao-proje {
+  margin-top: 18px;
+  background: var(--grad-primary);
+  width: 65%;
+  height: 50px;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #000;
+  transition: 0.4s ease-in-out;
+}
+.Botao-cv {
+  margin-top: 18px;
+  width: 170px;
+  height: 50px;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 17px;
+  color: var(--accent-cyan);
+  transition: 0.4s ease-in-out;
+  border: solid 1px var(--accent-cyan);
+}
+.Botao-cv:hover {
+  color: #ffffff;
+  transform: translateY(3px);
+}
+.Botao-proje:hover {
+  background: var(--grad-text);
+  transform: translateY(3px);
+  color: #ffffff;
+}
+
+.MyFoto {
+  margin-top: 20px;
+  width: 20%;
+  margin-right: 37px;
+  border-radius: 24px;
+  border: solid;
+  border-color: var(--accent-cyan);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.4s ease-in-out;
+}
+
+.MyFoto:hover {
+  transform: translateY(3px);
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .textContet {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
+  }
+
+  .Bnts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .textContet .Name {
+    height: auto;
+    width: auto;
+    font-size: 37px;
+    margin-bottom: 10px;
+  }
+  .textContet h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .MyFoto {
+    height: auto;
+    width: 20%;
+    margin-top: 27px;
+    width: 270px;
+    margin-right: 0;
+    border-radius: 24px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #c300ff;
+    }
+  }
+
+  .typewriter h1 {
+    white-space: normal;
+    border-right: none; 
+    animation: none; 
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #c300ff;
+  }
+}

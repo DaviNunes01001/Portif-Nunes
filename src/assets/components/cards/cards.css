@@ -1,0 +1,73 @@
+@import url("../../../index.css");
+
+
+  .card-stack {
+    width: 230px;
+    height: 340px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1px white;
+    transition: 0.4s ease-in-out;
+}
+
+.card-stack:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-nivel);
+}
+
+.card-stack img {
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: solid 1px;
+    padding: 15px;
+}
+
+.icon-dark {
+  filter: invert(1);
+}
+.text-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.text-container h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.text-container h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+.text-container p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.range-container {
+    width: 100px;
+    background-color: brown;
+}
+
+.range-container {
+  width: 130px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.range-fill {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}

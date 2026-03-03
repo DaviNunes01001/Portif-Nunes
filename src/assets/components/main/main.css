@@ -169,34 +169,35 @@ main {
     margin-right: 0;
     border-radius: 24px;
   }
+}
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #c300ff;
-    }
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
 
-  .typewriter h1 {
-    white-space: normal;
-    border-right: none; 
-    animation: none; 
-    width: auto;
-    text-align: center;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: #c300ff;
+  }
+}
+
+.typewriter h1 {
+  white-space: normal;
+  border-right: none;
+  animation: none;
+  width: auto;
+  text-align: center;
 }
 
 /* The typing effect */

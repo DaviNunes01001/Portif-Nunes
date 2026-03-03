@@ -1,38 +1,59 @@
 import "./section.css";
+import { useState } from "react";
+import { translations } from "../../../i88n/translate";
 
 function Section() {
+  const [lang, setLang] = useState("pt");
+
   return (
-    <section>
-      <div className="container">
-        <h1>"Talk is cheap. Show me the code."</h1>
-        <h2>Linus Torvalds</h2>
-      </div>
-      <div className="about-me">
-        <h1>About me</h1>
-        <div className="Container-about">
-          <div className="bnts-apple">
-            <div className="apple-bnt"></div>
-            <div className="apple-bnt"></div>
-            <div className="apple-bnt"></div>
-          </div>
-          <p>
+    <>
+      <section>
+        <div className="container">
+          <h1>"Talk is cheap. Show me the code."</h1>
+          <h2>Linus Torvalds</h2>
+        </div>
+
+        <div className="about-me">
+          <h1>About me</h1>
+
+          <div className="Container-about">
+            <div className="bnts-apple">
+              <div className="bnts-mac">
+                <div className="apple-bnt"></div>
+                <div className="apple-bnt"></div>
+                <div className="apple-bnt"></div>
+              </div>
+
+              <div className="Translate">
+                <button
+                  id="Translate-button"
+                  onClick={() => setLang(lang === "pt" ? "en" : "pt")}
+                >
+                  <img src="translate-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
             <pre>
-              <code>
-                &lt;p&gt; Meu nome é Davi Nunes, tenho 18 anos, atualmente
-                estudo no sesi no ensino medio tecnico orquestrado pelos
-                professores do senai em parceria com o sesi, curso o tecnico de
-                analise e desenvolvimento de sistemas (ADS), estou sempre em
-                constante evolução, buscando me consolidar nas tecnologias
-                conhecidas e me aprofundar cada vez mais nesse mundo incrivel da
-                tecnologia, desejo fazer coisas grandes, funcionais,
-                performaticas e inteligentes.&lt;/p&gt;
-              </code>
+              <code>{`<p>${translations[lang].about}</p>`}</code>
             </pre>
-          </p>
+          </div>
+        </div>
+      </section>
+      <div className="Stacks">
+        <h1>Stacks</h1>
+        <div className="Container-Stacks">
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
+          <div className="card-stack"></div>
         </div>
       </div>
-      
-    </section>
+    </>
   );
 }
 

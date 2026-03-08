@@ -201,16 +201,38 @@ section {
 }
 
 .container-stacks {
-  width: 100%;
   margin-top: 30px;
   width: 80%;
-  margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 20px;
+}
+
+.containers-cards-stacks {
+  background-color: aliceblue;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 25px;
+}
+
+/* variações individuais — só quando precisar diferenciar */
+.containers-cards-stacks[data-category="frontend"]     { 
+
+}
+.containers-cards-stacks[data-category="backend"]      {
+
+ }
+.containers-cards-stacks[data-category="versionamento"]{
+
+ }
+.containers-cards-stacks[data-category="producao"]     { 
+
 }
 
 

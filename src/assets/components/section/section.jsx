@@ -14,7 +14,7 @@ function Section() {
           <h2>Linus Torvalds</h2>
         </div>
 
-        <div className="about-me">
+        <div className="about-me" id="sobre">
           <h1>About me</h1>
 
           <div className="Container-about">
@@ -42,89 +42,100 @@ function Section() {
         </div>
       </section>
 
-      <div className="Stacks">
+      <div className="Stacks" id="stacks">
         <h1 className="stacks-h1">Stacks</h1>
         <div className="container-stacks">
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-            name="HTML5"
-            categoria="Markup"
-            nivel="avancado"
-          />
+          <div className="containers-cards-stacks" data-category="frontend">
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              name="HTML5"
+              categoria="Markup"
+              nivel="avancado"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              name="CSS3"
+              categoria="Estilização"
+              nivel="avancado"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              name="JavaScript"
+              categoria="Linguagem"
+              nivel="intermediario"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              name="React"
+              categoria="Front-End"
+              nivel="basico"
+            />
+          </div>
 
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-            name="CSS3"
-            categoria="Estilização"
-            nivel="avancado"
-          />
+          <div className="containers-cards-stacks" data-category="backend">
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              name="Node.js"
+              categoria="Back-End"
+              nivel="intermediario"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+              name="SQL"
+              categoria="Banco de Dados"
+              nivel="intermediario"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+              name="Express"
+              categoria="Back-End Framework"
+              nivel="basico"
+              invert={true}
+            />
+          </div>
 
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-            name="JavaScript"
-            categoria="Linguagem"
-            nivel="intermediario"
-          />
+          <div
+            className="containers-cards-stacks"
+            data-category="versionamento"
+          >
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              name="GitHub"
+              categoria="Versionamento"
+              nivel="intermediario"
+              invert={true}
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+              name="Git"
+              categoria="Versionamento"
+              nivel="intermediario"
+            />
+          </div>
 
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-            name="React"
-            categoria="Front-End"
-            nivel="basico"
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-            name="Node.js"
-            categoria="Back-End"
-            nivel="intermediario"
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-            name="Git"
-            categoria="Versionamento"
-            nivel="intermediario"
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-            name="SQL"
-            categoria="Banco de Dados"
-            nivel="intermediario"
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-            name="Express"
-            categoria="Back-End Framework"
-            nivel="basico"
-            invert={true}
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-            name="GitHub"
-            categoria="Versionamento"
-            nivel="intermediario"
-            invert={true}
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-            name="VS Code"
-            categoria="Editor de Código"
-            nivel="avancado"
-          />
-
-          <Cards
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-            name="Figma"
-            categoria="UI/UX Design"
-            nivel="basico"
-          />
+          <div className="containers-cards-stacks" data-category="producao">
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+              name="VS Code"
+              categoria="Editor de Código"
+              nivel="avancado"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+              name="Figma"
+              categoria="UI/UX Design"
+              nivel="basico"
+            />
+            <Cards
+              icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original-wordmark.svg"
+              name="Insomnia"
+              categoria="Rotas"
+              nivel="basico"
+            />
+          </div>
         </div>
       </div>
+      <div className="container-projetos"></div>
     </>
   );
 }

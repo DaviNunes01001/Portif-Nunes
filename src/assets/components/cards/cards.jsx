@@ -2,15 +2,15 @@ import "./cards.css";
 
 function Cards({ icon, name, categoria, nivel, invert }) {
   const nivelMap = {
-    basico: 30,
-    intermediario: 70,
+    basico: 50,
+    intermediario: 75,
     avancado: 90,
   };
 
   const corMap = {
-    basico: "yellow",
-    intermediario: "orange",
-    avancado: "green",
+    basico: "#ddf030",
+    intermediario: "#0c87da",
+    avancado: "#09ce09",
   };
 
   const corNivel = corMap[nivel] || "gray"

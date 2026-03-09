@@ -47,6 +47,7 @@ function Section() {
         <div className="container-stacks">
           <div className="containers-cards-stacks" data-category="frontend">
             <div className="about-stack-profile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg" />
               <h2>Front-End</h2>
               <p>Onde lógica vira experiência.</p>
               <span>Intermediário</span>
@@ -81,6 +82,7 @@ function Section() {
 
           <div className="containers-cards-stacks" data-category="backend">
             <div className="about-stack-profile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
               <h2>Back-End</h2>
               <p>Onde experiência vira dado.</p>
               <span>Intermediário</span>
@@ -113,6 +115,7 @@ function Section() {
             data-category="versionamento"
           >
             <div className="about-stack-profile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
               <h2>Versionamento</h2>
               <p>Onde o código ganha história.</p>
               <span>Intermediário</span>
@@ -136,6 +139,7 @@ function Section() {
 
           <div className="containers-cards-stacks" data-category="producao">
             <div className="about-stack-profile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
               <h2>Produção</h2>
               <p>Onde a ideia vira entrega.</p>
               <span>Básico</span>

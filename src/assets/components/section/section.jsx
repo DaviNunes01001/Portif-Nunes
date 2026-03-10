@@ -156,7 +156,7 @@ function Section() {
                 name="Figma"
                 categoria="UI/UX Design"
                 nivel="basico"
-              />
+               />
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original-wordmark.svg"
                 name="Insomnia"

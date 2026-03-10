@@ -99,6 +99,12 @@ function Section() {
                 name="SQL"
                 categoria="Banco de Dados"
                 nivel="intermediario"
+              />;
+              <Cards
+                icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg"
+                name="SQLite"
+                categoria="Banco de Dados"
+                nivel="basico"
               />
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"

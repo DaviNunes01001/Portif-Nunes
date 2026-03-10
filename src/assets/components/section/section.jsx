@@ -82,7 +82,7 @@ function Section() {
 
           <div className="containers-cards-stacks" data-category="backend">
             <div className="about-stack-profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
               <h2>Back-End</h2>
               <p>Onde experiência vira dado.</p>
               <span>Intermediário</span>
@@ -99,7 +99,7 @@ function Section() {
                 name="SQL"
                 categoria="Banco de Dados"
                 nivel="intermediario"
-              />;
+              />
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg"
                 name="SQLite"
@@ -121,7 +121,7 @@ function Section() {
             data-category="versionamento"
           >
             <div className="about-stack-profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
               <h2>Versionamento</h2>
               <p>Onde o código ganha história.</p>
               <span>Intermediário</span>
@@ -145,7 +145,7 @@ function Section() {
 
           <div className="containers-cards-stacks" data-category="producao">
             <div className="about-stack-profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
               <h2>Produção</h2>
               <p>Onde a ideia vira entrega.</p>
               <span>Básico</span>
@@ -162,7 +162,7 @@ function Section() {
                 name="Figma"
                 categoria="UI/UX Design"
                 nivel="basico"
-               />
+              />
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original-wordmark.svg"
                 name="Insomnia"

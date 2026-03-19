@@ -25,6 +25,7 @@ A principal evolução em relação à versão anterior foi a adoção de **comp
 - Vite
 - JavaScript
 - CSS
+- CSS Modules (em alguns componentes)
 - GitHub Pages
 
 ---
@@ -34,12 +35,15 @@ A principal evolução em relação à versão anterior foi a adoção de **comp
 ```
 src
 ├── assets
-├── components
-│   ├── header
-│   ├── footer
-│   ├── main
-│   ├── section
-│   └── svg
+│   ├── components
+│   │   ├── card-projetos
+│   │   ├── cards
+│   │   ├── footer
+│   │   ├── header
+│   │   ├── main
+│   │   └── section
+│   └── ...
+├── i88n
 ├── App.jsx
 ├── App.css
 ├── index.css

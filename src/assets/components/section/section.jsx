@@ -1,4 +1,4 @@
-import "./section.css";
+import styles from "./section.module.css";
 import { useState } from "react";
 import { translations } from "../../../i88n/translate";
 import Cards from "../cards/cards.jsx";
@@ -9,23 +9,23 @@ function Section() {
   return (
     <>
       <section>
-        <div className="container">
+        <div className={styles.container}>
           <h1>"Talk is cheap. Show me the code."</h1>
           <h2>Linus Torvalds</h2>
         </div>
 
-        <div className="about-me" id="sobre">
+        <div className={styles["about-me"]} id="sobre">
           <h1>About me</h1>
 
-          <div className="Container-about">
-            <div className="bnts-apple">
-              <div className="bnts-mac">
-                <div className="apple-bnt"></div>
-                <div className="apple-bnt"></div>
-                <div className="apple-bnt"></div>
+          <div className={styles["Container-about"]}>
+            <div className={styles["bnts-apple"]}>
+              <div className={styles["bnts-mac"]}>
+                <div className={styles["apple-bnt"]}></div>
+                <div className={styles["apple-bnt"]}></div>
+                <div className={styles["apple-bnt"]}></div>
               </div>
 
-              <div className="Translate">
+              <div className={styles.Translate}>
                 <button
                   id="Translate-button"
                   onClick={() => setLang(lang === "pt" ? "en" : "pt")}
@@ -42,17 +42,17 @@ function Section() {
         </div>
       </section>
 
-      <div className="Stacks" id="stacks">
-        <h1 className="stacks-h1">Stacks</h1>
-        <div className="container-stacks">
-          <div className="containers-cards-stacks" data-category="frontend">
-            <div className="about-stack-profile">
+      <div className={styles.Stacks} id="stacks">
+        <h1 className={styles["stacks-h1"]}>Stacks</h1>
+        <div className={styles["container-stacks"]}>
+          <div className={styles["containers-cards-stacks"]} data-category="frontend">
+            <div className={styles["about-stack-profile"]}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg" />
               <h2>Front-End</h2>
               <p>Onde lógica vira experiência.</p>
               <span>Intermediário</span>
             </div>
-            <div className="cards-cont">
+            <div className={styles["cards-cont"]}>
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 name="HTML5"
@@ -80,14 +80,14 @@ function Section() {
             </div>
           </div>
 
-          <div className="containers-cards-stacks" data-category="backend">
-            <div className="about-stack-profile">
+          <div className={styles["containers-cards-stacks"]} data-category="backend">
+            <div className={styles["about-stack-profile"]}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
               <h2>Back-End</h2>
               <p>Onde experiência vira dado.</p>
               <span>Intermediário</span>
             </div>
-            <div className="cards-cont">
+            <div className={styles["cards-cont"]}>
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
                 name="Node.js"
@@ -117,16 +117,16 @@ function Section() {
           </div>
 
           <div
-            className="containers-cards-stacks"
+            className={styles["containers-cards-stacks"]}
             data-category="versionamento"
           >
-            <div className="about-stack-profile">
+            <div className={styles["about-stack-profile"]}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
               <h2>Versionamento</h2>
               <p>Onde o código ganha história.</p>
               <span>Intermediário</span>
             </div>
-            <div className="cards-cont">
+            <div className={styles["cards-cont"]}>
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                 name="GitHub"
@@ -143,14 +143,14 @@ function Section() {
             </div>
           </div>
 
-          <div className="containers-cards-stacks" data-category="producao">
-            <div className="about-stack-profile">
+          <div className={styles["containers-cards-stacks"]} data-category="producao">
+            <div className={styles["about-stack-profile"]}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
               <h2>Produção</h2>
               <p>Onde a ideia vira entrega.</p>
-              <span>Básico</span>
+              <span>Intermediário</span>
             </div>
-            <div className="cards-cont">
+            <div className={styles["cards-cont"]}>
               <Cards
                 icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
                 name="VS Code"

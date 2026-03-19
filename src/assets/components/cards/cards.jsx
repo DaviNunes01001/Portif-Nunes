@@ -1,4 +1,4 @@
-import "./cards.css";
+import styles from "./cards.module.css";
 
 function Cards({ icon, name, categoria, nivel, invert }) {
   const nivelMap = {
@@ -18,7 +18,7 @@ function Cards({ icon, name, categoria, nivel, invert }) {
 
   return (
     <div
-     className="card-stack"
+     className={styles["card-stack"]}
      style={{"--cor-nivel": corNivel}}>
       <img src={icon} alt={`Icone stack: ${name}`}
       style={{
@@ -26,13 +26,13 @@ function Cards({ icon, name, categoria, nivel, invert }) {
         }}
        />
 
-      <div className="text-container">
+      <div className={styles["text-container"]}>
         <h1>Stack: {name}</h1>
         <h2>Categoria: {categoria}</h2>
 
-        <div className="range-container">
+        <div className={styles["range-container"]}>
           <div
-            className="range-fill"
+            className={styles["range-fill"]}
             style={{
               width: `${porcentagem}%`,
               backgroundColor: corMap[nivel] || "gray",
@@ -40,7 +40,7 @@ function Cards({ icon, name, categoria, nivel, invert }) {
           ></div>
         </div>
 
-        <p className="nivel-texto">Nível: {nivel}</p>
+        <p className={styles["nivel-texto"]}>Nível: {nivel}</p>
       </div>
     </div>
   );

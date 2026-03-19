@@ -9,8 +9,7 @@ main {
   --line: 1px;
   --color: rgba(255, 255, 255, 0.2);
 
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to left,
       transparent calc(var(--gap) - var(--line)),
       var(--color) calc(var(--gap) - var(--line)),
@@ -27,6 +26,7 @@ main {
   align-items: center;
   justify-content: space-around;
 }
+
 .textContet {
   margin-left: 47px;
   width: 80%;
@@ -45,6 +45,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .textContet h1 {
   font-size: 30px;
   background: var(--grad-text);
@@ -86,6 +87,7 @@ main {
   color: #000;
   transition: 0.3s ease-in-out;
 }
+
 .Botao-cv {
   margin-top: 18px;
   width: 170px;
@@ -101,10 +103,12 @@ main {
   transition: 0.4s ease-in-out;
   border: solid 1px var(--accent-cyan);
 }
+
 .Botao-cv:hover {
   color: #ffffff;
   transform: translateY(3px);
 }
+
 .Botao-proje:hover {
   background: var(--grad-text);
   transform: translateY(3px);
@@ -114,6 +118,7 @@ main {
 .MyFoto {
   margin-top: 20px;
   width: 20%;
+  height: 70%;
   margin-right: 37px;
   border-radius: 24px;
   border: solid;
@@ -156,6 +161,7 @@ main {
     font-size: 37px;
     margin-bottom: 10px;
   }
+
   .textContet h1 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -171,11 +177,11 @@ main {
   }
 }
 
-
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -187,6 +193,7 @@ main {
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #c300ff;
   }
@@ -205,6 +212,7 @@ main {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -216,6 +224,7 @@ main {
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #c300ff;
   }

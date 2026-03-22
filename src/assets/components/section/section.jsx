@@ -15,35 +15,59 @@ function Section() {
         </div>
 
         <div className={styles["about-me"]} id="sobre">
-          <h1>About me</h1>
+          <div className={styles["about-me-header"]}>
+            <h1 className={styles["about-me-title"]}>About me</h1>
+            <p className={styles["about-me-tagline"]}>
+              Um pouco sobre mim
+            </p>
+          </div>
 
           <div className={styles["Container-about"]}>
-            <div className={styles["bnts-apple"]}>
+            <div className={styles["about-window-bar"]}>
               <div className={styles["bnts-mac"]}>
-                <div className={styles["apple-bnt"]}></div>
-                <div className={styles["apple-bnt"]}></div>
-                <div className={styles["apple-bnt"]}></div>
+                <div className={styles["apple-bnt"]} title="Fechar" />
+                <div className={styles["apple-bnt"]} title="Minimizar" />
+                <div className={styles["apple-bnt"]} title="Maximizar" />
               </div>
-
+              <span className={styles["about-window-title"]}>about.tsx</span>
               <div className={styles.Translate}>
                 <button
+                  type="button"
                   id="Translate-button"
+                  className={styles["translate-btn"]}
                   onClick={() => setLang(lang === "pt" ? "en" : "pt")}
+                  aria-label={
+                    lang === "pt"
+                      ? "Traduzir para inglês"
+                      : "Translate to Portuguese"
+                  }
                 >
                   <img src="translate-icon.svg" alt="" />
+                  <span className={styles["translate-label"]}>
+                    {lang === "pt" ? "EN" : "PT"}
+                  </span>
                 </button>
               </div>
             </div>
 
-            <pre>
-              <code>{`<p>${translations[lang].about}</p>`}</code>
-            </pre>
+            <div className={styles["about-code-body"]}>
+              <pre className={styles["about-pre"]}>
+                <code className={styles["about-code"]}>
+                  {`<p>${translations[lang].about}</p>`}
+                </code>
+              </pre>
+            </div>
           </div>
         </div>
       </section>
 
       <div className={styles.Stacks} id="stacks">
-        <h1 className={styles["stacks-h1"]}>Stacks</h1>
+        <div className={styles["stacks-header"]}>
+          <h1 className={styles["stacks-h1"]}>Stacks</h1>
+          <p className={styles["stacks-sub"]}>
+            Ferramentas e linguagens que uso para construir interfaces e APIs.
+          </p>
+        </div>
         <div className={styles["container-stacks"]}>
           <div className={styles["containers-cards-stacks"]} data-category="frontend">
             <div className={styles["about-stack-profile"]}>

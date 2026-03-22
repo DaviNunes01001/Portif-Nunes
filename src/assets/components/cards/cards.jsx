@@ -25,8 +25,7 @@ function Cards({ icon, name, categoria, nivel, invert }) {
 
   return (
     <article
-      className={styles["card-stack"]}
-      style={{ "--cor-nivel": corNivel }}
+      className={styles["card-stack"]} style={{ "--cor-nivel": corNivel }}
     >
       <div className={styles["card-icon-wrap"]}>
         <img

@@ -10,8 +10,8 @@ function Header() {
       <ul>
         <li><a href="#sobre">About me</a></li>
         <li><a href="#stacks">Stacks</a></li>
-        <li><a href="#projetos">Projects</a></li>
-        <li><a href="#projetos">Contact</a></li>
+        <li><a href="#Projetos">Projects</a></li>
+        <li><a href="#Contato">Contact</a></li>
       </ul>
   
     </header>

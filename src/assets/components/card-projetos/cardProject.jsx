@@ -12,13 +12,13 @@ function CardProject({
   const corMapFundo = {
     CONCLUIDO: "#170080ab",
     ANDAMENTO: "#858300be",
-    ONLINE: "#187a00b2",
+    ONLINE: "#0d2818",
   };
 
   const CorLetra = {
     CONCLUIDO: "#00ffea",
     ANDAMENTO: "#fffb00",
-    ONLINE: "#04f32c",
+    ONLINE: "#2dc257",
   };
 
   const CorStatus = corMapFundo[status] || "grey";
@@ -57,8 +57,8 @@ function CardProject({
 
         <div className={styles["br"]}></div>
         <div className={styles["Links"]}>
-          <a href={github}></a>
-          <a href={link}></a>
+          <a href={github}><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.svg" alt="icon-github"/>GitHub</a>
+          <a href={link}><img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/link.svg" alt="Link-site-emoji" />Link</a>
         </div>
       </div>
     </>

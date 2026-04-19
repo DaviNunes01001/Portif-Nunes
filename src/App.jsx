@@ -77,7 +77,7 @@ function App() {
               </article>
               <article className="contato-card">
                 <span className="contato-label">E-mail</span>
-                <a href="davinuns20@gmail.com" className="contato-link">
+                <a href="mailto:davinuns20@gmail.com" className="contato-link">
                   lorem@exemplo.com
                 </a>
                 <p className="contato-note">
@@ -90,7 +90,9 @@ function App() {
       </section>
 
       <footer className="footer-site">
-        <div className="section-inner footer-inner" />
+        <div className="section-inner footer-inner">
+          <p className="footer-text">© Davi Nunes Bulhoes - Full Stack Developer</p>
+        </div>
       </footer>
     </>
   );

@@ -1,6 +1,5 @@
 @import url("index.css");
 
-/* Blocos de página (Projetos, Contato, Footer) — base compartilhada */
 .section-inner {
   width: 100%;
   max-width: 1200px;
@@ -9,13 +8,13 @@
 
 .section-heading {
   text-align: center;
-  max-width: 36rem;
+  max-width: 42rem;
   margin: 0 auto 2rem;
 }
 
 .section-title {
-  margin: 0 0 0.65rem;
-  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   background: var(--grad-text);
@@ -26,63 +25,56 @@
 
 .section-sub {
   margin: 0;
+  color: rgba(255, 255, 255, 0.58);
   font-size: 0.9rem;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
 }
 
-/* —— Projetos —— */
+/* Projetos */
 .projetos-section {
   width: 100%;
-  padding: 3rem 1.25rem 4rem;
+  padding: 3rem 1.2rem 3.5rem;
   border-top: 1px solid rgba(154, 155, 157, 0.2);
   background:
     radial-gradient(
       ellipse 70% 40% at 50% 0%,
-      rgba(167, 139, 250, 0.1),
+      rgba(120, 119, 198, 0.12),
       transparent 55%
     ),
-    linear-gradient(180deg, #0c0e12 0%, #060708 100%);
+    linear-gradient(180deg, #0b0d12 0%, #06070a 100%);
 }
 
 .Container-Card_projetos {
   width: 100%;
-  min-height: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.1rem;
   align-items: stretch;
-  justify-content: center;
-  gap: 1.5rem;
 }
 
-/* —— Contato (mesmo estilo, brilho ciano) —— */
+/* Contato (mantido simples e estável) */
 .contato-section {
   width: 100%;
-  padding: 3rem 1.25rem 4rem;
+  padding: 2.8rem 1.2rem 3.2rem;
   border-top: 1px solid rgba(154, 155, 157, 0.2);
   background:
     radial-gradient(
       ellipse 70% 40% at 50% 0%,
-      rgba(12, 234, 250, 0.08),
+      rgba(0, 212, 255, 0.08),
       transparent 55%
     ),
-    linear-gradient(180deg, #0c0e12 0%, #060708 100%);
+    linear-gradient(180deg, #0b0d12 0%, #06070a 100%);
 }
 
 .contato-slot {
-  width: 100%;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  display: grid;
-  gap: 1.6rem;
 }
 
 .contato-intro {
-  margin: 0 auto;
-  max-width: 42rem;
-  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 1rem;
   text-align: center;
-  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .contato-grid {
@@ -92,28 +84,23 @@
 }
 
 .contato-card {
-  padding: 1.5rem;
-  border: 1px solid rgba(12, 234, 250, 0.18);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .contato-label {
-  display: inline-block;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-  font-weight: 700;
   color: #7ef0ff;
+  font-weight: 700;
 }
 
 .contato-link {
   display: block;
-  margin-bottom: 0.85rem;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #fff;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .contato-link:hover {
@@ -123,40 +110,34 @@
 .contato-note {
   margin: 0;
   color: rgba(255, 255, 255, 0.62);
-  font-size: 0.92rem;
-  line-height: 1.75;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-/* —— Footer (container vazio, mesmo “chão” visual) —— */
+/* Footer profissional */
 .footer-site {
   width: 100%;
-  padding: 2.5rem 1.25rem 3rem;
   border-top: 1px solid rgba(154, 155, 157, 0.2);
-  background:
-    radial-gradient(
-      ellipse 60% 35% at 50% 100%,
-      rgba(100, 100, 120, 0.06),
-      transparent 50%
-    ),
-    linear-gradient(180deg, #060708 0%, #030405 100%);
+  background: #05060a;
+  padding: 1.2rem 1rem;
 }
 
-@media screen and (max-width: 500px) {
-  .projetos-section,
-  .contato-section {
-    padding: 2rem 1rem 3rem;
-  }
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .footer-site {
-    padding: 2rem 1rem 2.5rem;
-  }
+.footer-text {
+  margin: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
 
-  .Container-Card_projetos {
-    gap: 1.25rem;
+@media screen and (max-width: 760px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
   }
-
-  .section-heading {
-    margin-bottom: 1.5rem;
-  }
-
 }

@@ -40,7 +40,7 @@ function App() {
             />
             <CardProject
               title="Consectetur adipiscing elit"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+              description="Dui aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
               icon="⚙️"
               github="#"
               stacks={["JavaScript", "PostegreSQL"]}

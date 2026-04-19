@@ -69,6 +69,64 @@
     linear-gradient(180deg, #0c0e12 0%, #060708 100%);
 }
 
+.contato-slot {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.contato-intro {
+  margin: 0 auto;
+  max-width: 42rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contato-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(12, 234, 250, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.contato-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7ef0ff;
+}
+
+.contato-link {
+  display: block;
+  margin-bottom: 0.85rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contato-link:hover {
+  text-decoration: underline;
+}
+
+.contato-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
 /* —— Footer (container vazio, mesmo “chão” visual) —— */
 .footer-site {
   width: 100%;

@@ -7,7 +7,7 @@
 ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
 
-🔗 **Deploy:** [davinunes01001.github.io/Portif-Nunes](https://davinunes01001.github.io/Portif-Nunes/)
+🔗 deploy - (https://portifolio-nunes.vercel.app/)
 
 ---
 

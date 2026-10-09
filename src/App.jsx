@@ -68,8 +68,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                   className="contato-link"
-                >
-                  linkedin.com/in/lorem-ipsum
+                Davi Nunes Bulhoes 
                 </a>
                 <p className="contato-note">
                   Conecte-se para trocar ideias, ver o portfólio e iniciar uma conversa profissional.
@@ -78,7 +77,7 @@ function App() {
               <article className="contato-card">
                 <span className="contato-label">E-mail</span>
                 <a href="mailto:davinuns20@gmail.com" className="contato-link">
-                  lorem@exemplo.com
+                  davinuns20@gmail.com
                 </a>
                 <p className="contato-note">
                   Envie uma mensagem para obter respostas rápidas, feedbacks e propostas.

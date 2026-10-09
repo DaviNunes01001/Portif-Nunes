@@ -1,19 +1,23 @@
 import "./header.css";
 
-
 function Header() {
   return (
-    <header>
-      <h1>Davi Nunes
-        <p>Full stack Developer</p>
-      </h1>
-      <ul>
-        <li><a href="#sobre">About me</a></li>
-        <li><a href="#stacks">Stacks</a></li>
-        <li><a href="#Projetos">Projects</a></li>
-        <li><a href="#Contato">Contact</a></li>
-      </ul>
-  
+    <header className="site-header">
+      <div className="header-inner">
+        <div className="brand">
+          <h1>Davi Nunes</h1>
+          <p>Full Stack Developer</p>
+        </div>
+
+        <nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#stacks">Stacks</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#Contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

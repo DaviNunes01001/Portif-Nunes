@@ -15,8 +15,7 @@ function App() {
           <div className="section-heading">
             <h2 className="section-title">Projetos</h2>
             <p className="section-sub">
-              Alguns trabalhos e experimentos — o primeiro é real; os outros são
-              preenchimento (lorem) só para visualizar o layout.
+              Seleção de projetos com foco em front-end, APIs e aplicações full-stack.
             </p>
           </div>
           <div className="Container-Card_projetos">
@@ -33,7 +32,7 @@ function App() {
               title="Busca CEP React"
               description="Aplicação React que busca informações de endereço através de CEP (código de endereçamento postal brasileiro) consumindo a ViaCEP API."
               icon="📦"
-              github="#"
+              github="https://github.com/DaviNunes01001/BuscaDeCep"
               stacks={["React", "API"]}
               link="https://github.com/DaviNunes01001/BuscaDeCep"
               status="CONCLUIDO"
@@ -42,8 +41,8 @@ function App() {
               title="Integração de API propria e Front"
               description="Aplicação Full-Stack com node e HTML5 E CSS3, Crud simples - (Create, Read, Uptade, Delete)"
               icon="⚙️"
-              github="#"
-            stacks={["JavaScript", "PostegreSQL", "NODE", "API", "API-REST", "Crud"]}
+              github="https://github.com/DaviNunes01001/Api-post_cliente"
+              stacks={["JavaScript", "PostegreSQL", "NODE", "API", "API-REST", "Crud"]}
               link="https://github.com/DaviNunes01001/Api-post_cliente"
               status="CONCLUIDO"
             />
@@ -58,7 +57,7 @@ function App() {
           </header>
           <div className="contato-slot">
             <p className="contato-intro">
-             Aqui abaixo os meus canais de comunicação
+              Meus canais para conversas, oportunidades e networking.
             </p>
             <div className="contato-grid">
               <article className="contato-card">

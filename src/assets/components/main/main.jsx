@@ -2,22 +2,22 @@ import styles from "./main.module.css";
 
 function Main() {
   return (
-    <main>
+    <main className={styles.hero}>
       <div className={styles.textContet}>
-        <h1 className={styles.Name}>Olá eu sou Davi Nunes</h1>
-
-        <h2>Desenvolvedor full-stack em desenvolvimento</h2>
+        <p className={styles.eyebrow}>Portfólio pessoal</p>
+        <h1 className={styles.Name}>Olá, eu sou Davi Nunes</h1>
+        <h2>Desenvolvedor full-stack em evolução constante.</h2>
 
         <div className={styles.typewriter}>
-          <h1>Focado em arquitetura e Performance</h1>
+          <p>Foco em arquitetura, performance e código limpo.</p>
         </div>
 
         <div className={styles.Bnts}>
-          <a className={styles["Botao-proje"]} href="#projetos">
-            Ver Projetos
+          <a className={styles["Botao-proje"]} href="#Projetos">
+            Ver projetos
           </a>
-          <a className={styles["Botao-cv"]} href="#">
-            Pdf Curriculo
+          <a className={styles["Botao-cv"]} href="#Contato">
+            Entrar em contato
           </a>
         </div>
       </div>

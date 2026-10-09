@@ -67,7 +67,7 @@ function App() {
                   href="https://www.linkedin.com/in/davi-nunes-bulhoes-08399638b/"
                   target="_blank"
                   rel="noreferrer"
-                  className="contato-link"
+                  className="contato-link"></a>
                 Davi Nunes Bulhoes 
                 </a>
                 <p className="contato-note">

@@ -67,8 +67,9 @@ function App() {
                   href="https://www.linkedin.com/in/davi-nunes-bulhoes-08399638b/"
                   target="_blank"
                   rel="noreferrer"
-                  className="contato-link"></a>
-                Davi Nunes Bulhoes 
+                  className="contato-link"
+                >
+                  Davi Nunes Bulhoes
                 </a>
                 <p className="contato-note">
                   Conecte-se para trocar ideias, ver o portfólio e iniciar uma conversa profissional.
